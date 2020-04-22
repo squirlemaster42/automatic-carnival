@@ -1,5 +1,7 @@
 package graphics;
 
+import java.awt.image.BufferedImage;
+
 public abstract class Asset {
 
     private final String name;
@@ -11,4 +13,6 @@ public abstract class Asset {
     public String getName(){
         return name;
     }
+
+    public abstract BufferedImage getImage();
 }

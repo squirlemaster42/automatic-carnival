@@ -10,7 +10,6 @@ public class Game implements Runnable {
 
     private final int width;
     private final int height;
-    private final String title;
 
     public boolean running = false;
     private Thread thread;
@@ -21,7 +20,6 @@ public class Game implements Runnable {
     public Game(final String title, final int width, final int height) {
         this.width = width;
         this.height = height;
-        this.title = title;
         display = new Display(title, width, height);
     }
 

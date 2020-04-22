@@ -23,7 +23,9 @@ public final class StateManager{
     }
 
     public void setCurrentState(final String name){
-        currentState.handleExitTransition();
+        if(currentState != null){
+            currentState.handleExitTransition();
+        }
         if(stateMap.containsKey(name)){
             currentState = stateMap.get(name);
             currentState.handleStartTransition();
@@ -41,11 +43,15 @@ public final class StateManager{
     }
 
     public void tick(){
-        currentState.tick();
+        if(currentState != null){
+            currentState.tick();
+        }
     }
 
     public void render(Graphics g){
-        currentState.render(g);
+        if(currentState != null){
+            currentState.render(g);
+        }
     }
 
 }
