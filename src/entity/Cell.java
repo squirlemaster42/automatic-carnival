@@ -13,7 +13,7 @@ public class Cell {
 
     public void update(int xMove, int yMove, boolean age){
         if(age){
-            this.age--;
+            this.age++;
         }
         x += xMove;
         y += yMove;
