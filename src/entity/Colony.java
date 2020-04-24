@@ -19,7 +19,7 @@ public class Colony {
     private static final int STARTING_AGE = 1; //Start at 1 to make the math nicer
     private static final double DEATH_RATE = 0.001;
     private static final double REPRODUCTION_RATE = 0.1;
-    private static final double AGE_RATE = 0.4;
+    private static final double AGE_RATE = 0.5;
 
     private BufferedImage world;
     private final Random rnd;
